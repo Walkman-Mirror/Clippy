@@ -1,0 +1,4 @@
+Clippy
+======
+
+Awesome clipboard manager.
