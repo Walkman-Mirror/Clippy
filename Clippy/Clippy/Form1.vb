@@ -23,4 +23,10 @@
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         Preferences.ShowDialog()
     End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If My.Settings.CLPY_HideOnStartup = True Then
+            Me.Hide()
+        End If
+    End Sub
 End Class
