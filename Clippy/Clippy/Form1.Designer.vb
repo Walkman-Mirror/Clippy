@@ -26,19 +26,19 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ClearClipboardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.QuitClippToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SettextToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SettextToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SetimageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ShowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ShowtextToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ShowimageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AboutClippyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SettextToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SettextToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SetimageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ClearClipboardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.CheckForupdtaesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutClippyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.QuitClippToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -63,7 +63,45 @@ Partial Class Form1
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowToolStripMenuItem, Me.SettextToolStripMenuItem, Me.ToolStripSeparator2, Me.ClearClipboardToolStripMenuItem, Me.ToolStripSeparator1, Me.CheckForupdtaesToolStripMenuItem, Me.AboutClippyToolStripMenuItem, Me.ToolStripSeparator3, Me.QuitClippToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(171, 154)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(171, 176)
+        '
+        'ShowToolStripMenuItem
+        '
+        Me.ShowToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowtextToolStripMenuItem, Me.ShowimageToolStripMenuItem})
+        Me.ShowToolStripMenuItem.Name = "ShowToolStripMenuItem"
+        Me.ShowToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.ShowToolStripMenuItem.Text = "&Get content"
+        '
+        'ShowtextToolStripMenuItem
+        '
+        Me.ShowtextToolStripMenuItem.Name = "ShowtextToolStripMenuItem"
+        Me.ShowtextToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ShowtextToolStripMenuItem.Text = "Show &text"
+        '
+        'ShowimageToolStripMenuItem
+        '
+        Me.ShowimageToolStripMenuItem.Name = "ShowimageToolStripMenuItem"
+        Me.ShowimageToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ShowimageToolStripMenuItem.Text = "Show &image"
+        '
+        'SettextToolStripMenuItem
+        '
+        Me.SettextToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettextToolStripMenuItem1, Me.SetimageToolStripMenuItem})
+        Me.SettextToolStripMenuItem.Name = "SettextToolStripMenuItem"
+        Me.SettextToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.SettextToolStripMenuItem.Text = "S&et content"
+        '
+        'SettextToolStripMenuItem1
+        '
+        Me.SettextToolStripMenuItem1.Name = "SettextToolStripMenuItem1"
+        Me.SettextToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.SettextToolStripMenuItem1.Text = "Set &text"
+        '
+        'SetimageToolStripMenuItem
+        '
+        Me.SetimageToolStripMenuItem.Name = "SetimageToolStripMenuItem"
+        Me.SetimageToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SetimageToolStripMenuItem.Text = "Set &image"
         '
         'ToolStripSeparator2
         '
@@ -81,49 +119,11 @@ Partial Class Form1
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(167, 6)
         '
-        'QuitClippToolStripMenuItem
+        'CheckForupdtaesToolStripMenuItem
         '
-        Me.QuitClippToolStripMenuItem.Name = "QuitClippToolStripMenuItem"
-        Me.QuitClippToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
-        Me.QuitClippToolStripMenuItem.Text = "&Quit Clippy"
-        '
-        'SettextToolStripMenuItem
-        '
-        Me.SettextToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettextToolStripMenuItem1, Me.SetimageToolStripMenuItem})
-        Me.SettextToolStripMenuItem.Name = "SettextToolStripMenuItem"
-        Me.SettextToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
-        Me.SettextToolStripMenuItem.Text = "S&et text"
-        '
-        'SettextToolStripMenuItem1
-        '
-        Me.SettextToolStripMenuItem1.Name = "SettextToolStripMenuItem1"
-        Me.SettextToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.SettextToolStripMenuItem1.Text = "Set &text"
-        '
-        'SetimageToolStripMenuItem
-        '
-        Me.SetimageToolStripMenuItem.Name = "SetimageToolStripMenuItem"
-        Me.SetimageToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.SetimageToolStripMenuItem.Text = "Set &image"
-        '
-        'ShowToolStripMenuItem
-        '
-        Me.ShowToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowtextToolStripMenuItem, Me.ShowimageToolStripMenuItem})
-        Me.ShowToolStripMenuItem.Name = "ShowToolStripMenuItem"
-        Me.ShowToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
-        Me.ShowToolStripMenuItem.Text = "S&how"
-        '
-        'ShowtextToolStripMenuItem
-        '
-        Me.ShowtextToolStripMenuItem.Name = "ShowtextToolStripMenuItem"
-        Me.ShowtextToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ShowtextToolStripMenuItem.Text = "Show &text"
-        '
-        'ShowimageToolStripMenuItem
-        '
-        Me.ShowimageToolStripMenuItem.Name = "ShowimageToolStripMenuItem"
-        Me.ShowimageToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.ShowimageToolStripMenuItem.Text = "Show &image"
+        Me.CheckForupdtaesToolStripMenuItem.Name = "CheckForupdtaesToolStripMenuItem"
+        Me.CheckForupdtaesToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.CheckForupdtaesToolStripMenuItem.Text = "Check for &updates"
         '
         'AboutClippyToolStripMenuItem
         '
@@ -131,16 +131,16 @@ Partial Class Form1
         Me.AboutClippyToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
         Me.AboutClippyToolStripMenuItem.Text = "&About Clippy"
         '
-        'CheckForupdtaesToolStripMenuItem
-        '
-        Me.CheckForupdtaesToolStripMenuItem.Name = "CheckForupdtaesToolStripMenuItem"
-        Me.CheckForupdtaesToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
-        Me.CheckForupdtaesToolStripMenuItem.Text = "Check for &updates"
-        '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
         Me.ToolStripSeparator3.Size = New System.Drawing.Size(167, 6)
+        '
+        'QuitClippToolStripMenuItem
+        '
+        Me.QuitClippToolStripMenuItem.Name = "QuitClippToolStripMenuItem"
+        Me.QuitClippToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
+        Me.QuitClippToolStripMenuItem.Text = "&Quit Clippy"
         '
         'PictureBox1
         '
