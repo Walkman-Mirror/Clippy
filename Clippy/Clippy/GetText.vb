@@ -1,10 +1,18 @@
 ﻿Public Class GetText
 
     Private Sub GetTextFromClipboard_Tick(sender As Object, e As EventArgs) Handles GetTextFromClipboard.Tick
-        RichTextBox1.Text = Clipboard.GetText()
+        GetClipboardTextContents()
     End Sub
 
     Private Sub GetText_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        GetTextFromClipboard.Start()
+        If My.Settings.UseTimers = True Then
+            GetTextFromClipboard.Start()
+        Else
+            GetClipboardTextContents()
+        End If
+    End Sub
+
+    Private Sub GetClipboardTextContents()
+        RichTextBox1.Text = Clipboard.GetText()
     End Sub
 End Class
