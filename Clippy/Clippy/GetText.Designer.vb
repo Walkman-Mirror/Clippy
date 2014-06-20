@@ -42,9 +42,9 @@ Partial Class GetText
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Right
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(72, 9)
+        Me.Label1.Location = New System.Drawing.Point(68, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(218, 25)
         Me.Label1.TabIndex = 0
@@ -59,7 +59,7 @@ Partial Class GetText
         Me.RichTextBox1.Location = New System.Drawing.Point(0, 47)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(367, 267)
-        Me.RichTextBox1.TabIndex = 1
+        Me.RichTextBox1.TabIndex = 0
         Me.RichTextBox1.Text = ""
         '
         'GetText
@@ -75,9 +75,8 @@ Partial Class GetText
         Me.Name = "GetText"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
-        Me.Text = "Current clipboard text content"
+        Me.Text = "Current clipboard text"
         Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
