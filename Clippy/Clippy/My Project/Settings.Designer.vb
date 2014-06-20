@@ -54,15 +54,27 @@ Namespace My
             End Get
         End Property
         
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("true")>  _
-        Public Property CLPY_HideOnStartup() As String
+        <Global.System.Configuration.UserScopedSettingAttribute(), _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")> _
+        Public Property HideOnStartup() As Boolean
             Get
-                Return CType(Me("CLPY_HideOnStartup"),String)
+                Return CType(Me("HideOnStartup"), Boolean)
             End Get
-            Set
-                Me("CLPY_HideOnStartup") = value
+            Set(value As Boolean)
+                Me("HideOnStartup") = value
+            End Set
+        End Property
+
+        <Global.System.Configuration.UserScopedSettingAttribute(), _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")> _
+        Public Property CheckForUpdatesOnStartup() As Boolean
+            Get
+                Return CType(Me("CheckForUpdatesOnStartup"), Boolean)
+            End Get
+            Set(value As Boolean)
+                Me("CheckForUpdatesOnStartup") = value
             End Set
         End Property
     End Class

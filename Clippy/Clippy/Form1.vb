@@ -25,7 +25,7 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If My.Settings.CLPY_HideOnStartup = True Then
+        If My.Settings.HideOnStartup = True Then
             Me.Hide()
         End If
     End Sub

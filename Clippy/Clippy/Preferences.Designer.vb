@@ -23,7 +23,7 @@ Partial Class Preferences
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Preferences))
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnApply = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
@@ -31,21 +31,21 @@ Partial Class Preferences
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnDone = New System.Windows.Forms.Button()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button2
+        'btnApply
         '
-        Me.Button2.Location = New System.Drawing.Point(237, 439)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(106, 29)
-        Me.Button2.TabIndex = 72
-        Me.Button2.Text = "&Apply"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnApply.Location = New System.Drawing.Point(237, 439)
+        Me.btnApply.Name = "btnApply"
+        Me.btnApply.Size = New System.Drawing.Size(106, 29)
+        Me.btnApply.TabIndex = 72
+        Me.btnApply.Text = "&Apply"
+        Me.btnApply.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
@@ -119,14 +119,14 @@ Partial Class Preferences
         Me.Panel1.Size = New System.Drawing.Size(467, 100)
         Me.Panel1.TabIndex = 70
         '
-        'Button1
+        'btnDone
         '
-        Me.Button1.Location = New System.Drawing.Point(349, 439)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(106, 29)
-        Me.Button1.TabIndex = 69
-        Me.Button1.Text = "&Done"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnDone.Location = New System.Drawing.Point(349, 439)
+        Me.btnDone.Name = "btnDone"
+        Me.btnDone.Size = New System.Drawing.Size(106, 29)
+        Me.btnDone.TabIndex = 69
+        Me.btnDone.Text = "&Done"
+        Me.btnDone.UseVisualStyleBackColor = True
         '
         'btnReset
         '
@@ -143,10 +143,10 @@ Partial Class Preferences
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(467, 480)
         Me.Controls.Add(Me.btnReset)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnApply)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnDone)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -163,7 +163,7 @@ Partial Class Preferences
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnApply As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
@@ -171,6 +171,6 @@ Partial Class Preferences
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnDone As System.Windows.Forms.Button
     Friend WithEvents btnReset As System.Windows.Forms.Button
 End Class
