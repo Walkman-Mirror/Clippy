@@ -2,8 +2,8 @@
 
     Private Sub Reset(sender As Object, e As EventArgs) Handles btnReset.Click
         My.Settings.Reset()
-        MsgBox("Clippy will now restart! Please click Ok.")
-        Application.Restart()
+        MsgBox("Setting have been reset!", MsgBoxStyle.Information)
+        ApplyChanges()
     End Sub
 
     Private Sub Preferences_Load(sender As Object, e As EventArgs) Handles MyBase.Load
