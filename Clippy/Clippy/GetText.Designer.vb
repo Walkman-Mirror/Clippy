@@ -22,8 +22,11 @@ Partial Class GetText
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.GetTextFromClipboard = New System.Windows.Forms.Timer(Me.components)
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -31,6 +34,7 @@ Partial Class GetText
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
         Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(367, 47)
@@ -46,11 +50,24 @@ Partial Class GetText
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Current clipboard text"
         '
+        'GetTextFromClipboard
+        '
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RichTextBox1.Location = New System.Drawing.Point(0, 47)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(367, 267)
+        Me.RichTextBox1.TabIndex = 1
+        Me.RichTextBox1.Text = ""
+        '
         'GetText
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(367, 314)
+        Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
@@ -66,4 +83,6 @@ Partial Class GetText
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents GetTextFromClipboard As System.Windows.Forms.Timer
+    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
 End Class
