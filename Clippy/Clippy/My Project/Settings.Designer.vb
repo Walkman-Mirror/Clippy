@@ -89,6 +89,18 @@ Namespace My
                 Me("UseTimers") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property UseTimers_interval() As String
+            Get
+                Return CType(Me("UseTimers_interval"),String)
+            End Get
+            Set
+                Me("UseTimers_interval") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

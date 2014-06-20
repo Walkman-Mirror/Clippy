@@ -6,6 +6,7 @@
 
     Private Sub GetText_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If My.Settings.UseTimers = True Then
+            GetTextFromClipboard.Interval = My.Settings.UseTimers_interval
             GetTextFromClipboard.Start()
         Else
             GetClipboardTextContents()

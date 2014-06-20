@@ -25,8 +25,11 @@ Partial Class Preferences
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Preferences))
         Me.btnApply = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.chkUseTimerCheckers = New System.Windows.Forms.CheckBox()
+        Me.chkCheckForUpdatesOnStartup = New System.Windows.Forms.CheckBox()
+        Me.chkHideClippyOnStartup = New System.Windows.Forms.CheckBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -43,14 +46,17 @@ Partial Class Preferences
         Me.btnApply.Location = New System.Drawing.Point(237, 439)
         Me.btnApply.Name = "btnApply"
         Me.btnApply.Size = New System.Drawing.Size(106, 29)
-        Me.btnApply.TabIndex = 72
+        Me.btnApply.TabIndex = 3
         Me.btnApply.Text = "&Apply"
         Me.btnApply.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.CheckBox2)
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
+        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.chkUseTimerCheckers)
+        Me.GroupBox1.Controls.Add(Me.chkCheckForUpdatesOnStartup)
+        Me.GroupBox1.Controls.Add(Me.chkHideClippyOnStartup)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 106)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(443, 327)
@@ -58,25 +64,51 @@ Partial Class Preferences
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Preferences"
         '
-        'CheckBox2
+        'TextBox1
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(6, 42)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(163, 17)
-        Me.CheckBox2.TabIndex = 1
-        Me.CheckBox2.Text = "Check for updates on startup"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.TextBox1.Location = New System.Drawing.Point(6, 55)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(117, 20)
+        Me.TextBox1.TabIndex = 4
         '
-        'CheckBox1
+        'Label3
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(6, 19)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(129, 17)
-        Me.CheckBox1.TabIndex = 0
-        Me.CheckBox1.Text = "Hide Clippy on startup"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(3, 39)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(87, 13)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "Checker interval:"
+        '
+        'chkUseTimerCheckers
+        '
+        Me.chkUseTimerCheckers.AutoSize = True
+        Me.chkUseTimerCheckers.Location = New System.Drawing.Point(6, 19)
+        Me.chkUseTimerCheckers.Name = "chkUseTimerCheckers"
+        Me.chkUseTimerCheckers.Size = New System.Drawing.Size(117, 17)
+        Me.chkUseTimerCheckers.TabIndex = 0
+        Me.chkUseTimerCheckers.Text = "Use timer checkers"
+        Me.chkUseTimerCheckers.UseVisualStyleBackColor = True
+        '
+        'chkCheckForUpdatesOnStartup
+        '
+        Me.chkCheckForUpdatesOnStartup.AutoSize = True
+        Me.chkCheckForUpdatesOnStartup.Location = New System.Drawing.Point(6, 104)
+        Me.chkCheckForUpdatesOnStartup.Name = "chkCheckForUpdatesOnStartup"
+        Me.chkCheckForUpdatesOnStartup.Size = New System.Drawing.Size(163, 17)
+        Me.chkCheckForUpdatesOnStartup.TabIndex = 2
+        Me.chkCheckForUpdatesOnStartup.Text = "Check for updates on startup"
+        Me.chkCheckForUpdatesOnStartup.UseVisualStyleBackColor = True
+        '
+        'chkHideClippyOnStartup
+        '
+        Me.chkHideClippyOnStartup.AutoSize = True
+        Me.chkHideClippyOnStartup.Location = New System.Drawing.Point(6, 81)
+        Me.chkHideClippyOnStartup.Name = "chkHideClippyOnStartup"
+        Me.chkHideClippyOnStartup.Size = New System.Drawing.Size(129, 17)
+        Me.chkHideClippyOnStartup.TabIndex = 1
+        Me.chkHideClippyOnStartup.Text = "Hide Clippy on startup"
+        Me.chkHideClippyOnStartup.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -124,7 +156,7 @@ Partial Class Preferences
         Me.btnDone.Location = New System.Drawing.Point(349, 439)
         Me.btnDone.Name = "btnDone"
         Me.btnDone.Size = New System.Drawing.Size(106, 29)
-        Me.btnDone.TabIndex = 69
+        Me.btnDone.TabIndex = 4
         Me.btnDone.Text = "&Done"
         Me.btnDone.UseVisualStyleBackColor = True
         '
@@ -133,7 +165,7 @@ Partial Class Preferences
         Me.btnReset.Location = New System.Drawing.Point(12, 439)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(106, 29)
-        Me.btnReset.TabIndex = 73
+        Me.btnReset.TabIndex = 5
         Me.btnReset.Text = "&Reset"
         Me.btnReset.UseVisualStyleBackColor = True
         '
@@ -165,12 +197,15 @@ Partial Class Preferences
     End Sub
     Friend WithEvents btnApply As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents chkCheckForUpdatesOnStartup As System.Windows.Forms.CheckBox
+    Friend WithEvents chkHideClippyOnStartup As System.Windows.Forms.CheckBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents btnDone As System.Windows.Forms.Button
     Friend WithEvents btnReset As System.Windows.Forms.Button
+    Friend WithEvents chkUseTimerCheckers As System.Windows.Forms.CheckBox
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class
