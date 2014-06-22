@@ -33,4 +33,8 @@
     Private Sub ShowText(sender As Object, e As EventArgs) Handles ShowtextToolStripMenuItem.Click
         GetText.Show()
     End Sub
+
+    Private Sub ShowimageToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShowimageToolStripMenuItem.Click
+        GetImage.Show()
+    End Sub
 End Class

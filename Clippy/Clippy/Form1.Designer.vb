@@ -94,13 +94,13 @@ Partial Class Form1
         'SettextToolStripMenuItem1
         '
         Me.SettextToolStripMenuItem1.Name = "SettextToolStripMenuItem1"
-        Me.SettextToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.SettextToolStripMenuItem1.Size = New System.Drawing.Size(126, 22)
         Me.SettextToolStripMenuItem1.Text = "Set &text"
         '
         'SetimageToolStripMenuItem
         '
         Me.SetimageToolStripMenuItem.Name = "SetimageToolStripMenuItem"
-        Me.SetimageToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SetimageToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
         Me.SetimageToolStripMenuItem.Text = "Set &image"
         '
         'ToolStripSeparator2
