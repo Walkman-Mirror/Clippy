@@ -118,6 +118,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GetImage.resx">
+      <DependentUpon>GetImage.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GetText.resx">
       <DependentUpon>GetText.vb</DependentUpon>
     </EmbeddedResource>
