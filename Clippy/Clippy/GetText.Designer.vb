@@ -48,6 +48,7 @@ Partial Class GetText
         Me.Label1.Size = New System.Drawing.Size(343, 25)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Current clipboard text"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'GetTextFromClipboard
         '
