@@ -35,4 +35,8 @@
     Private Sub CheckForupdtaesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CheckForupdtaesToolStripMenuItem.Click
         CheckForUpdates.ShowDialog()
     End Sub
+
+    Private Sub AboutClippyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutClippyToolStripMenuItem.Click
+        About.ShowDialog()
+    End Sub
 End Class

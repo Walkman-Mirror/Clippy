@@ -63,7 +63,7 @@ Partial Class Form1
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowToolStripMenuItem, Me.SettextToolStripMenuItem, Me.ToolStripSeparator2, Me.ClearClipboardToolStripMenuItem, Me.ToolStripSeparator1, Me.CheckForupdtaesToolStripMenuItem, Me.AboutClippyToolStripMenuItem, Me.ToolStripSeparator3, Me.QuitClippToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(171, 176)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(171, 154)
         '
         'ShowToolStripMenuItem
         '
@@ -75,13 +75,13 @@ Partial Class Form1
         'ShowtextToolStripMenuItem
         '
         Me.ShowtextToolStripMenuItem.Name = "ShowtextToolStripMenuItem"
-        Me.ShowtextToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.ShowtextToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ShowtextToolStripMenuItem.Text = "Show &text"
         '
         'ShowimageToolStripMenuItem
         '
         Me.ShowimageToolStripMenuItem.Name = "ShowimageToolStripMenuItem"
-        Me.ShowimageToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
+        Me.ShowimageToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ShowimageToolStripMenuItem.Text = "Show &image"
         '
         'SettextToolStripMenuItem
