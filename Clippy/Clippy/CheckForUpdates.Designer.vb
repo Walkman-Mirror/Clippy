@@ -27,7 +27,7 @@ Partial Class CheckForUpdates
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnGetUpdate = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -53,9 +53,9 @@ Partial Class CheckForUpdates
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(106, 49)
+        Me.ProgressBar1.Location = New System.Drawing.Point(106, 55)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(199, 23)
+        Me.ProgressBar1.Size = New System.Drawing.Size(240, 23)
         Me.ProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee
         Me.ProgressBar1.TabIndex = 4
         '
@@ -69,22 +69,22 @@ Partial Class CheckForUpdates
         Me.WebBrowser1.TabIndex = 5
         Me.WebBrowser1.Visible = False
         '
-        'Button1
+        'btnGetUpdate
         '
-        Me.Button1.Location = New System.Drawing.Point(211, 76)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 28)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "&Get update"
-        Me.Button1.UseVisualStyleBackColor = True
-        Me.Button1.Visible = False
+        Me.btnGetUpdate.Location = New System.Drawing.Point(252, 84)
+        Me.btnGetUpdate.Name = "btnGetUpdate"
+        Me.btnGetUpdate.Size = New System.Drawing.Size(94, 28)
+        Me.btnGetUpdate.TabIndex = 6
+        Me.btnGetUpdate.Text = "&Get update"
+        Me.btnGetUpdate.UseVisualStyleBackColor = True
+        Me.btnGetUpdate.Visible = False
         '
         'CheckForUpdates
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(358, 116)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnGetUpdate)
         Me.Controls.Add(Me.WebBrowser1)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Label1)
@@ -106,5 +106,5 @@ Partial Class CheckForUpdates
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
     Friend WithEvents WebBrowser1 As System.Windows.Forms.WebBrowser
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnGetUpdate As System.Windows.Forms.Button
 End Class

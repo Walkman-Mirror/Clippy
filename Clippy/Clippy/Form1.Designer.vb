@@ -75,13 +75,13 @@ Partial Class Form1
         'ShowtextToolStripMenuItem
         '
         Me.ShowtextToolStripMenuItem.Name = "ShowtextToolStripMenuItem"
-        Me.ShowtextToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ShowtextToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.ShowtextToolStripMenuItem.Text = "Show &text"
         '
         'ShowimageToolStripMenuItem
         '
         Me.ShowimageToolStripMenuItem.Name = "ShowimageToolStripMenuItem"
-        Me.ShowimageToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ShowimageToolStripMenuItem.Size = New System.Drawing.Size(139, 22)
         Me.ShowimageToolStripMenuItem.Text = "Show &image"
         '
         'SettextToolStripMenuItem

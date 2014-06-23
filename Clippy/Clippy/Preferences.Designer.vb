@@ -28,7 +28,6 @@ Partial Class Preferences
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.chkUseTimerCheckers = New System.Windows.Forms.CheckBox()
-        Me.chkCheckForUpdatesOnStartup = New System.Windows.Forms.CheckBox()
         Me.chkHideClippyOnStartup = New System.Windows.Forms.CheckBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -55,7 +54,6 @@ Partial Class Preferences
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.chkUseTimerCheckers)
-        Me.GroupBox1.Controls.Add(Me.chkCheckForUpdatesOnStartup)
         Me.GroupBox1.Controls.Add(Me.chkHideClippyOnStartup)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 106)
         Me.GroupBox1.Name = "GroupBox1"
@@ -89,16 +87,6 @@ Partial Class Preferences
         Me.chkUseTimerCheckers.TabIndex = 0
         Me.chkUseTimerCheckers.Text = "Use timer checkers"
         Me.chkUseTimerCheckers.UseVisualStyleBackColor = True
-        '
-        'chkCheckForUpdatesOnStartup
-        '
-        Me.chkCheckForUpdatesOnStartup.AutoSize = True
-        Me.chkCheckForUpdatesOnStartup.Location = New System.Drawing.Point(6, 104)
-        Me.chkCheckForUpdatesOnStartup.Name = "chkCheckForUpdatesOnStartup"
-        Me.chkCheckForUpdatesOnStartup.Size = New System.Drawing.Size(163, 17)
-        Me.chkCheckForUpdatesOnStartup.TabIndex = 2
-        Me.chkCheckForUpdatesOnStartup.Text = "Check for updates on startup"
-        Me.chkCheckForUpdatesOnStartup.UseVisualStyleBackColor = True
         '
         'chkHideClippyOnStartup
         '
@@ -197,7 +185,6 @@ Partial Class Preferences
     End Sub
     Friend WithEvents btnApply As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents chkCheckForUpdatesOnStartup As System.Windows.Forms.CheckBox
     Friend WithEvents chkHideClippyOnStartup As System.Windows.Forms.CheckBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label

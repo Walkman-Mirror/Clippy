@@ -25,9 +25,7 @@
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If My.Settings.HideOnStartup = True Then
-            Me.Hide()
-        End If
+        If My.Settings.HideOnStartup = True Then Me.Hide()
     End Sub
 
     Private Sub ShowText(sender As Object, e As EventArgs) Handles ShowtextToolStripMenuItem.Click
@@ -36,5 +34,9 @@
 
     Private Sub ShowimageToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShowimageToolStripMenuItem.Click
         GetImage.Show()
+    End Sub
+
+    Private Sub CheckForupdtaesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CheckForupdtaesToolStripMenuItem.Click
+        CheckForUpdates.ShowDialog()
     End Sub
 End Class
