@@ -125,6 +125,18 @@
     <Compile Include="Preferences.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SetImage.Designer.vb">
+      <DependentUpon>SetImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SetImage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetText.Designer.vb">
+      <DependentUpon>SetText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SetText.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CheckForUpdates.resx">
@@ -147,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Preferences.resx">
       <DependentUpon>Preferences.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetText.resx">
+      <DependentUpon>SetText.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
