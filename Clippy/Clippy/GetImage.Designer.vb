@@ -24,8 +24,8 @@ Partial Class GetImage
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.GetImageFromClipboard = New System.Windows.Forms.Timer(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.GetImageFromClipboard = New System.Windows.Forms.Timer(Me.components)
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,6 +51,9 @@ Partial Class GetImage
         Me.Label1.Text = "Current clipboard image"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'GetImageFromClipboard
+        '
+        '
         'PictureBox1
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
@@ -68,9 +71,6 @@ Partial Class GetImage
         Me.ClientSize = New System.Drawing.Size(367, 314)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Panel1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
         Me.Name = "GetImage"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False

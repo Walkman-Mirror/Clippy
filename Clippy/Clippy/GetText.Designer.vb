@@ -70,9 +70,6 @@ Partial Class GetText
         Me.ClientSize = New System.Drawing.Size(367, 314)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Panel1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
         Me.Name = "GetText"
         Me.ShowIcon = False
         Me.ShowInTaskbar = False
