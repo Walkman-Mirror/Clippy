@@ -14,7 +14,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Awesome clipboard manager.")> 
 <Assembly: AssemblyCompany("DeavmiOSS")> 
 <Assembly: AssemblyProduct("Clippy")> 
-<Assembly: AssemblyCopyright("")> 
+<Assembly: AssemblyCopyright("FGOSS from DeavmiOSS.")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)> 
