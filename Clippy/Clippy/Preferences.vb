@@ -12,11 +12,6 @@
         Else
             chkHideClippyOnStartup.CheckState = CheckState.Unchecked
         End If
-        If My.Settings.CheckForUpdatesOnStartup = True Then
-            chkCheckForUpdatesOnStartup.CheckState = CheckState.Checked
-        Else
-            chkCheckForUpdatesOnStartup.CheckState = CheckState.Unchecked
-        End If
         If My.Settings.UseTimers = True Then
             chkUseTimerCheckers.Checked = True
         Else
@@ -31,11 +26,6 @@
             My.Settings.HideOnStartup = True
         Else
             My.Settings.HideOnStartup = False
-        End If
-        If chkCheckForUpdatesOnStartup.CheckState = CheckState.Checked = True Then
-            My.Settings.CheckForUpdatesOnStartup = True
-        Else
-            My.Settings.CheckForUpdatesOnStartup = False
         End If
         If chkUseTimerCheckers.Checked = True Then
             My.Settings.UseTimers = True
