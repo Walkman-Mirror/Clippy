@@ -39,4 +39,12 @@
     Private Sub AboutClippyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutClippyToolStripMenuItem.Click
         About.ShowDialog()
     End Sub
+
+    Private Sub SettextToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles SettextToolStripMenuItem1.Click
+        SetText.ShowDialog()
+    End Sub
+
+    Private Sub SetimageToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SetimageToolStripMenuItem.Click
+        SetImage.ShowDialog()
+    End Sub
 End Class
