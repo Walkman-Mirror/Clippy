@@ -163,6 +163,9 @@
     <EmbeddedResource Include="Preferences.resx">
       <DependentUpon>Preferences.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SetImage.resx">
+      <DependentUpon>SetImage.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SetText.resx">
       <DependentUpon>SetText.vb</DependentUpon>
     </EmbeddedResource>
