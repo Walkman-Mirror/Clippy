@@ -11,6 +11,6 @@ Public Class SetText
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-        TextBox1.Text = File.ReadAllText(TextBox1.Text)
+        RichTextBox1.Text = File.ReadAllText(TextBox1.Text)
     End Sub
 End Class
