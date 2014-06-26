@@ -24,51 +24,51 @@ Partial Class GetText
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtTitle = New System.Windows.Forms.Label()
         Me.GetTextFromClipboard = New System.Windows.Forms.Timer(Me.components)
-        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.rtxbxClipboardText = New System.Windows.Forms.RichTextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.txtTitle)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(367, 47)
         Me.Panel1.TabIndex = 0
         '
-        'Label1
+        'txtTitle
         '
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(343, 25)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Current clipboard text"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.txtTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTitle.Location = New System.Drawing.Point(12, 9)
+        Me.txtTitle.Name = "txtTitle"
+        Me.txtTitle.Size = New System.Drawing.Size(343, 25)
+        Me.txtTitle.TabIndex = 0
+        Me.txtTitle.Text = "Current clipboard text"
+        Me.txtTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'GetTextFromClipboard
         '
         '
-        'RichTextBox1
+        'rtxbxClipboardText
         '
-        Me.RichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RichTextBox1.Location = New System.Drawing.Point(0, 47)
-        Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.ReadOnly = True
-        Me.RichTextBox1.Size = New System.Drawing.Size(367, 267)
-        Me.RichTextBox1.TabIndex = 0
-        Me.RichTextBox1.Text = ""
+        Me.rtxbxClipboardText.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.rtxbxClipboardText.Location = New System.Drawing.Point(0, 47)
+        Me.rtxbxClipboardText.Name = "rtxbxClipboardText"
+        Me.rtxbxClipboardText.ReadOnly = True
+        Me.rtxbxClipboardText.Size = New System.Drawing.Size(367, 267)
+        Me.rtxbxClipboardText.TabIndex = 0
+        Me.rtxbxClipboardText.Text = ""
         '
         'GetText
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(367, 314)
-        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.rtxbxClipboardText)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "GetText"
         Me.ShowIcon = False
@@ -80,7 +80,7 @@ Partial Class GetText
 
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents txtTitle As System.Windows.Forms.Label
     Friend WithEvents GetTextFromClipboard As System.Windows.Forms.Timer
-    Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
+    Friend WithEvents rtxbxClipboardText As System.Windows.Forms.RichTextBox
 End Class

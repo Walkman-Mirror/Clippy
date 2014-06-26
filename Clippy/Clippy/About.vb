@@ -19,7 +19,7 @@
 
 Public Class About
     Private Sub About_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Label4.Text = Label4.Text = My.Application.Info.Version.ToString & " (nightly)"
+        Label4.Text = My.Application.Info.Version.ToString & " (beta)"
         WebBrowser1.Navigate("http://deavmi.github.io/Clippy/changelog.txt")
         WebBrowser2.Navigate("http://deavmi.github.io/Clippy/credits.txt")
         WebBrowser3.Navigate("http://deavmi.github.io/Clippy/licenses.txt")

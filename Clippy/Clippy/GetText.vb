@@ -14,6 +14,6 @@
     End Sub
 
     Private Sub GetClipboardTextContents()
-        RichTextBox1.Text = Clipboard.GetText()
+        rtxbxClipboardText.Text = Clipboard.GetText()
     End Sub
 End Class

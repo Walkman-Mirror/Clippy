@@ -14,6 +14,6 @@
     End Sub
 
     Private Sub GetClipboardImageContents()
-        PictureBox1.Image = Clipboard.GetImage
+        imgClipboardImage.Image = Clipboard.GetImage
     End Sub
 End Class

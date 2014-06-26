@@ -27,4 +27,8 @@
             btnGetUpdate.Visible = False
         End If
     End Sub
+
+    Private Sub btnGetUpdate_Click(sender As Object, e As EventArgs) Handles btnGetUpdate.Click
+        Process.Start("https://github.com/deavmi/Clippy/releases")
+    End Sub
 End Class
