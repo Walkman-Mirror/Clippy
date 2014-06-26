@@ -1,5 +1,5 @@
 ﻿'DogeCoin-Live is a simple DogeCoin read-only wallet with other features too.
-'   FGOSS from DeavmiOSS.
+'   FGOSS from DeavmiOSS. GPL v3 or above.
 
 '   This program is free software: you can redistribute it and/or modify
 '   it under the terms of the GNU General Public License as published by
