@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class Clippy
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Clippy))
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ShowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -39,14 +39,16 @@ Partial Class Form1
         Me.AboutClippyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.QuitClippToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
+        Me.imgLogo = New System.Windows.Forms.PictureBox()
+        Me.txtClippy = New System.Windows.Forms.Label()
+        Me.txtDescription = New System.Windows.Forms.Label()
+        Me.btnHide = New System.Windows.Forms.Button()
+        Me.btnQuit = New System.Windows.Forms.Button()
+        Me.txtConfig = New System.Windows.Forms.LinkLabel()
+        Me.txtUpdates = New System.Windows.Forms.LinkLabel()
+        Me.txtAbout = New System.Windows.Forms.LinkLabel()
         Me.ContextMenuStrip1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.imgLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'NotifyIcon1
@@ -63,7 +65,7 @@ Partial Class Form1
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowToolStripMenuItem, Me.SettextToolStripMenuItem, Me.ToolStripSeparator2, Me.ClearClipboardToolStripMenuItem, Me.ToolStripSeparator1, Me.CheckForupdtaesToolStripMenuItem, Me.AboutClippyToolStripMenuItem, Me.ToolStripSeparator3, Me.QuitClippToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(171, 176)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(171, 154)
         '
         'ShowToolStripMenuItem
         '
@@ -94,13 +96,13 @@ Partial Class Form1
         'SettextToolStripMenuItem1
         '
         Me.SettextToolStripMenuItem1.Name = "SettextToolStripMenuItem1"
-        Me.SettextToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.SettextToolStripMenuItem1.Size = New System.Drawing.Size(126, 22)
         Me.SettextToolStripMenuItem1.Text = "Set &text"
         '
         'SetimageToolStripMenuItem
         '
         Me.SetimageToolStripMenuItem.Name = "SetimageToolStripMenuItem"
-        Me.SetimageToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SetimageToolStripMenuItem.Size = New System.Drawing.Size(126, 22)
         Me.SetimageToolStripMenuItem.Text = "Set &image"
         '
         'ToolStripSeparator2
@@ -142,86 +144,109 @@ Partial Class Form1
         Me.QuitClippToolStripMenuItem.Size = New System.Drawing.Size(170, 22)
         Me.QuitClippToolStripMenuItem.Text = "&Quit Clippy"
         '
-        'PictureBox1
+        'imgLogo
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(357, 144)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
+        Me.imgLogo.Image = CType(resources.GetObject("imgLogo.Image"), System.Drawing.Image)
+        Me.imgLogo.Location = New System.Drawing.Point(12, 12)
+        Me.imgLogo.Name = "imgLogo"
+        Me.imgLogo.Size = New System.Drawing.Size(357, 144)
+        Me.imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.imgLogo.TabIndex = 1
+        Me.imgLogo.TabStop = False
         '
-        'Label1
+        'txtClippy
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(141, 159)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(97, 33)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Clippy"
+        Me.txtClippy.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtClippy.Location = New System.Drawing.Point(12, 159)
+        Me.txtClippy.Name = "txtClippy"
+        Me.txtClippy.Size = New System.Drawing.Size(357, 33)
+        Me.txtClippy.TabIndex = 2
+        Me.txtClippy.Text = "Clippy"
+        Me.txtClippy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label2
+        'txtDescription
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(86, 192)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(214, 20)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Awesome clipboard manager"
+        Me.txtDescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDescription.Location = New System.Drawing.Point(12, 192)
+        Me.txtDescription.Name = "txtDescription"
+        Me.txtDescription.Size = New System.Drawing.Size(357, 20)
+        Me.txtDescription.TabIndex = 5
+        Me.txtDescription.Text = "An awesome clipboard manager"
+        Me.txtDescription.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Button1
+        'btnHide
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 284)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(108, 33)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "&Hide"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnHide.Location = New System.Drawing.Point(12, 284)
+        Me.btnHide.Name = "btnHide"
+        Me.btnHide.Size = New System.Drawing.Size(108, 33)
+        Me.btnHide.TabIndex = 0
+        Me.btnHide.Text = "&Hide"
+        Me.btnHide.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnQuit
         '
-        Me.Button2.Location = New System.Drawing.Point(261, 284)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(108, 33)
-        Me.Button2.TabIndex = 5
-        Me.Button2.Text = "&Quit"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnQuit.Location = New System.Drawing.Point(261, 284)
+        Me.btnQuit.Name = "btnQuit"
+        Me.btnQuit.Size = New System.Drawing.Size(108, 33)
+        Me.btnQuit.TabIndex = 4
+        Me.btnQuit.Text = "&Quit"
+        Me.btnQuit.UseVisualStyleBackColor = True
         '
-        'LinkLabel1
+        'txtConfig
         '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.Location = New System.Drawing.Point(128, 238)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(124, 20)
-        Me.LinkLabel1.TabIndex = 6
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Configure Clippy"
+        Me.txtConfig.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtConfig.Location = New System.Drawing.Point(128, 222)
+        Me.txtConfig.Name = "txtConfig"
+        Me.txtConfig.Size = New System.Drawing.Size(124, 20)
+        Me.txtConfig.TabIndex = 1
+        Me.txtConfig.TabStop = True
+        Me.txtConfig.Text = "Configure Clippy"
+        Me.txtConfig.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Form1
+        'txtUpdates
+        '
+        Me.txtUpdates.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUpdates.Location = New System.Drawing.Point(128, 242)
+        Me.txtUpdates.Name = "txtUpdates"
+        Me.txtUpdates.Size = New System.Drawing.Size(124, 20)
+        Me.txtUpdates.TabIndex = 2
+        Me.txtUpdates.TabStop = True
+        Me.txtUpdates.Text = "Updates"
+        Me.txtUpdates.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtAbout
+        '
+        Me.txtAbout.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAbout.Location = New System.Drawing.Point(128, 262)
+        Me.txtAbout.Name = "txtAbout"
+        Me.txtAbout.Size = New System.Drawing.Size(124, 20)
+        Me.txtAbout.TabIndex = 3
+        Me.txtAbout.TabStop = True
+        Me.txtAbout.Text = "About"
+        Me.txtAbout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Clippy
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(381, 329)
-        Me.Controls.Add(Me.LinkLabel1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.txtAbout)
+        Me.Controls.Add(Me.txtUpdates)
+        Me.Controls.Add(Me.txtConfig)
+        Me.Controls.Add(Me.btnQuit)
+        Me.Controls.Add(Me.btnHide)
+        Me.Controls.Add(Me.txtDescription)
+        Me.Controls.Add(Me.txtClippy)
+        Me.Controls.Add(Me.imgLogo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.Name = "Form1"
+        Me.Name = "Clippy"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Clippy"
         Me.ContextMenuStrip1.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.imgLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents NotifyIcon1 As System.Windows.Forms.NotifyIcon
@@ -239,11 +264,13 @@ Partial Class Form1
     Friend WithEvents CheckForupdtaesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AboutClippyToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator3 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
+    Friend WithEvents imgLogo As System.Windows.Forms.PictureBox
+    Friend WithEvents txtClippy As System.Windows.Forms.Label
+    Friend WithEvents txtDescription As System.Windows.Forms.Label
+    Friend WithEvents btnHide As System.Windows.Forms.Button
+    Friend WithEvents btnQuit As System.Windows.Forms.Button
+    Friend WithEvents txtConfig As System.Windows.Forms.LinkLabel
+    Friend WithEvents txtUpdates As System.Windows.Forms.LinkLabel
+    Friend WithEvents txtAbout As System.Windows.Forms.LinkLabel
 
 End Class

@@ -1,6 +1,6 @@
-﻿Public Class Form1
+﻿Public Class Clippy
 
-    Private Sub Quit(sender As Object, e As EventArgs) Handles QuitClippToolStripMenuItem.Click, Button2.Click
+    Private Sub Quit(sender As Object, e As EventArgs) Handles QuitClippToolStripMenuItem.Click, btnQuit.Click
         Application.Exit()
     End Sub
 
@@ -8,7 +8,7 @@
         Clipboard.Clear()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnHide.Click
         Me.Hide()
     End Sub
 
@@ -16,7 +16,7 @@
         Me.Show()
     End Sub
 
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles txtConfig.LinkClicked
         Preferences.ShowDialog()
     End Sub
 
@@ -46,5 +46,13 @@
 
     Private Sub SetimageToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SetimageToolStripMenuItem.Click
         SetImage.ShowDialog()
+    End Sub
+
+    Private Sub txtUpdates_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles txtUpdates.LinkClicked
+        CheckForUpdates.ShowDialog()
+    End Sub
+
+    Private Sub txtAbout_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles txtAbout.LinkClicked
+        About.ShowDialog()
     End Sub
 End Class
