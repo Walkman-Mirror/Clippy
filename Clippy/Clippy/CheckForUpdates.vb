@@ -6,7 +6,7 @@
 
     Sub Check()
         Label1.Text = "Checking for updates..."
-        ProgressBar1.Visible = True
+        prgbrCheckForUpdates.Visible = True
         btnGetUpdate.Visible = False
         WebBrowser1.Navigate("https://deavmi.github.io/Clippy/current_version.txt")
     End Sub
@@ -14,7 +14,7 @@
     Private Sub WebBrowser1_DocumentCompleted(sender As Object, e As WebBrowserDocumentCompletedEventArgs) Handles WebBrowser1.DocumentCompleted
         'This is probably bad
         WebBrowser1.Refresh(WebBrowserRefreshOption.Completely)
-        ProgressBar1.Visible = False
+        prgbrCheckForUpdates.Visible = False
         ReadData()
     End Sub
 

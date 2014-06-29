@@ -25,7 +25,7 @@ Partial Class CheckForUpdates
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CheckForUpdates))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.prgbrCheckForUpdates = New System.Windows.Forms.ProgressBar()
         Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.btnGetUpdate = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,13 +51,13 @@ Partial Class CheckForUpdates
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Checking for updates..."
         '
-        'ProgressBar1
+        'prgbrCheckForUpdates
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(106, 55)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(240, 23)
-        Me.ProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee
-        Me.ProgressBar1.TabIndex = 4
+        Me.prgbrCheckForUpdates.Location = New System.Drawing.Point(106, 55)
+        Me.prgbrCheckForUpdates.Name = "prgbrCheckForUpdates"
+        Me.prgbrCheckForUpdates.Size = New System.Drawing.Size(240, 23)
+        Me.prgbrCheckForUpdates.Style = System.Windows.Forms.ProgressBarStyle.Marquee
+        Me.prgbrCheckForUpdates.TabIndex = 4
         '
         'WebBrowser1
         '
@@ -86,7 +86,7 @@ Partial Class CheckForUpdates
         Me.ClientSize = New System.Drawing.Size(358, 116)
         Me.Controls.Add(Me.btnGetUpdate)
         Me.Controls.Add(Me.WebBrowser1)
-        Me.Controls.Add(Me.ProgressBar1)
+        Me.Controls.Add(Me.prgbrCheckForUpdates)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -104,7 +104,7 @@ Partial Class CheckForUpdates
     End Sub
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
+    Friend WithEvents prgbrCheckForUpdates As System.Windows.Forms.ProgressBar
     Friend WithEvents WebBrowser1 As System.Windows.Forms.WebBrowser
     Friend WithEvents btnGetUpdate As System.Windows.Forms.Button
 End Class
