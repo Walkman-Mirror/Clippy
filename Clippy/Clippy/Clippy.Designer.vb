@@ -24,8 +24,8 @@ Partial Class Clippy
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Clippy))
-        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.NotificationIcon = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.NTrayMenu = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ShowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ShowtextToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ShowimageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -47,25 +47,25 @@ Partial Class Clippy
         Me.txtConfig = New System.Windows.Forms.LinkLabel()
         Me.txtUpdates = New System.Windows.Forms.LinkLabel()
         Me.txtAbout = New System.Windows.Forms.LinkLabel()
-        Me.ContextMenuStrip1.SuspendLayout()
+        Me.NTrayMenu.SuspendLayout()
         CType(Me.imgLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'NotifyIcon1
+        'NotificationIcon
         '
-        Me.NotifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info
-        Me.NotifyIcon1.BalloonTipText = "Clippy clipboard manager has started..."
-        Me.NotifyIcon1.BalloonTipTitle = "Clippy"
-        Me.NotifyIcon1.ContextMenuStrip = Me.ContextMenuStrip1
-        Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
-        Me.NotifyIcon1.Text = "Clippy"
-        Me.NotifyIcon1.Visible = True
+        Me.NotificationIcon.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info
+        Me.NotificationIcon.BalloonTipText = "Clippy clipboard manager has started..."
+        Me.NotificationIcon.BalloonTipTitle = "Clippy"
+        Me.NotificationIcon.ContextMenuStrip = Me.NTrayMenu
+        Me.NotificationIcon.Icon = CType(resources.GetObject("NotificationIcon.Icon"), System.Drawing.Icon)
+        Me.NotificationIcon.Text = "Clippy"
+        Me.NotificationIcon.Visible = True
         '
-        'ContextMenuStrip1
+        'NTrayMenu
         '
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowToolStripMenuItem, Me.SettextToolStripMenuItem, Me.ToolStripSeparator2, Me.ClearClipboardToolStripMenuItem, Me.ToolStripSeparator1, Me.CheckForupdtaesToolStripMenuItem, Me.AboutClippyToolStripMenuItem, Me.ToolStripSeparator3, Me.QuitClippToolStripMenuItem})
-        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(171, 154)
+        Me.NTrayMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ShowToolStripMenuItem, Me.SettextToolStripMenuItem, Me.ToolStripSeparator2, Me.ClearClipboardToolStripMenuItem, Me.ToolStripSeparator1, Me.CheckForupdtaesToolStripMenuItem, Me.AboutClippyToolStripMenuItem, Me.ToolStripSeparator3, Me.QuitClippToolStripMenuItem})
+        Me.NTrayMenu.Name = "ContextMenuStrip1"
+        Me.NTrayMenu.Size = New System.Drawing.Size(171, 154)
         '
         'ShowToolStripMenuItem
         '
@@ -244,13 +244,13 @@ Partial Class Clippy
         Me.Name = "Clippy"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Clippy"
-        Me.ContextMenuStrip1.ResumeLayout(False)
+        Me.NTrayMenu.ResumeLayout(False)
         CType(Me.imgLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents NotifyIcon1 As System.Windows.Forms.NotifyIcon
-    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents NotificationIcon As System.Windows.Forms.NotifyIcon
+    Friend WithEvents NTrayMenu As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents QuitClippToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripSeparator2 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents ClearClipboardToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
