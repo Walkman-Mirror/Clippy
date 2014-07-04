@@ -1,4 +1,4 @@
-﻿Public Class CheckForUpdates
+﻿Public Class Updates
 
     Private Sub CheckForUpdates_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Check()

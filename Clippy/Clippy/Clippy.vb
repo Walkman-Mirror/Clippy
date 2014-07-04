@@ -33,7 +33,7 @@
     End Sub
 
     Private Sub CheckForupdtaesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CheckForupdtaesToolStripMenuItem.Click
-        CheckForUpdates.ShowDialog()
+        Updates.ShowDialog()
     End Sub
 
     Private Sub AboutClippyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutClippyToolStripMenuItem.Click
@@ -49,7 +49,7 @@
     End Sub
 
     Private Sub txtUpdates_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles txtUpdates.LinkClicked
-        CheckForUpdates.ShowDialog()
+        Updates.ShowDialog()
     End Sub
 
     Private Sub txtAbout_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles txtAbout.LinkClicked

@@ -79,10 +79,10 @@
     <Compile Include="About.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CheckForUpdates.Designer.vb">
-      <DependentUpon>CheckForUpdates.vb</DependentUpon>
+    <Compile Include="Updates.Designer.vb">
+      <DependentUpon>Updates.vb</DependentUpon>
     </Compile>
-    <Compile Include="CheckForUpdates.vb">
+    <Compile Include="Updates.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Clippy.vb">
@@ -142,8 +142,8 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CheckForUpdates.resx">
-      <DependentUpon>CheckForUpdates.vb</DependentUpon>
+    <EmbeddedResource Include="Updates.resx">
+      <DependentUpon>Updates.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Clippy.resx">
       <DependentUpon>Clippy.vb</DependentUpon>
