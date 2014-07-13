@@ -127,7 +127,6 @@ Partial Class SetText
         Me.Controls.Add(Me.Panel1)
         Me.Name = "SetText"
         Me.ShowIcon = False
-        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Set clipboard text"
         Me.Panel1.ResumeLayout(False)

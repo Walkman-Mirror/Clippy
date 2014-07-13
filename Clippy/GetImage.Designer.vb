@@ -73,7 +73,6 @@ Partial Class GetImage
         Me.Controls.Add(Me.Panel1)
         Me.Name = "GetImage"
         Me.ShowIcon = False
-        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Current clipboard image"
         Me.Panel1.ResumeLayout(False)

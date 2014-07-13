@@ -72,7 +72,6 @@ Partial Class GetText
         Me.Controls.Add(Me.Panel1)
         Me.Name = "GetText"
         Me.ShowIcon = False
-        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Current clipboard text"
         Me.Panel1.ResumeLayout(False)
