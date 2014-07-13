@@ -13,4 +13,8 @@ Public Class SetText
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
         rtxbxSetClipboardText.Text = File.ReadAllText(TextBox1.Text)
     End Sub
+
+    Private Sub rtxbxSetClipboardText_TextChanged(sender As Object, e As EventArgs) Handles rtxbxSetClipboardText.TextChanged
+        Clipboard.SetText(rtxbxSetClipboardText.Text)
+    End Sub
 End Class
