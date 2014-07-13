@@ -29,7 +29,7 @@ Partial Class SetImage
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnBrowse = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.SelectImage = New System.Windows.Forms.OpenFileDialog()
+        Me.SelectImageFile = New System.Windows.Forms.OpenFileDialog()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Panel1.SuspendLayout()
@@ -87,10 +87,10 @@ Partial Class SetImage
         Me.TextBox1.Size = New System.Drawing.Size(260, 20)
         Me.TextBox1.TabIndex = 1
         '
-        'SelectImage
+        'SelectImageFile
         '
-        Me.SelectImage.FileName = "OpenFileDialog1"
-        Me.SelectImage.Title = "Select an image"
+        Me.SelectImageFile.FileName = "OpenFileDialog1"
+        Me.SelectImageFile.Title = "Select an image file"
         '
         'TableLayoutPanel1
         '
@@ -147,7 +147,7 @@ Partial Class SetImage
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents btnBrowse As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents SelectImage As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents SelectImageFile As System.Windows.Forms.OpenFileDialog
     Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents TableLayoutPanel2 As System.Windows.Forms.TableLayoutPanel
 End Class

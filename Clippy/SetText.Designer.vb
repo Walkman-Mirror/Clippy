@@ -31,7 +31,7 @@ Partial Class SetText
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.btnBrowse = New System.Windows.Forms.Button()
         Me.rtxbxSetClipboardText = New System.Windows.Forms.RichTextBox()
-        Me.OpenFileDialog = New System.Windows.Forms.OpenFileDialog()
+        Me.SelectTextFile = New System.Windows.Forms.OpenFileDialog()
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -114,9 +114,10 @@ Partial Class SetText
         Me.rtxbxSetClipboardText.TabIndex = 1
         Me.rtxbxSetClipboardText.Text = ""
         '
-        'OpenFileDialog
+        'SelectTextFile
         '
-        Me.OpenFileDialog.FileName = "OpenFileDialog1"
+        Me.SelectTextFile.FileName = "OpenFileDialog1"
+        Me.SelectTextFile.Title = "Select an text file"
         '
         'SetText
         '
@@ -143,6 +144,6 @@ Partial Class SetText
     Friend WithEvents TableLayoutPanel2 As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents btnBrowse As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents OpenFileDialog As System.Windows.Forms.OpenFileDialog
+    Friend WithEvents SelectTextFile As System.Windows.Forms.OpenFileDialog
     Friend WithEvents rtxbxSetClipboardText As System.Windows.Forms.RichTextBox
 End Class
