@@ -1,8 +1,8 @@
 ﻿Imports System.IO
 Public Class SetImage
 
-    Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
-        TextBox1.Text = OpenFileDialog1.FileName
+    Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles SelectImage.FileOk
+        TextBox1.Text = SelectImage.FileName
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
@@ -15,6 +15,6 @@ Public Class SetImage
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnBrowse.Click
-        OpenFileDialog1.ShowDialog()
+        SelectImage.ShowDialog()
     End Sub
 End Class
