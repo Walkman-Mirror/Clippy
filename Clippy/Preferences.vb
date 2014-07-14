@@ -7,32 +7,16 @@
     End Sub
 
     Private Sub Preferences_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If My.Settings.HideOnStartup = True Then
-            chkHideClippyOnStartup.CheckState = CheckState.Checked
-        Else
-            chkHideClippyOnStartup.CheckState = CheckState.Unchecked
-        End If
-        If My.Settings.UseTimers = True Then
-            chkUseTimerCheckers.Checked = True
-        Else
-            chkUseTimerCheckers.Checked = False
-        End If
-        TextBox1.Text = My.Settings.UseTimers_interval
-        chkUseTimerCheckers_CheckedChanged(sender:=Nothing, e:=Nothing)
+            chkHideClippyOnStartup.Checked = My.Settings.HideOnStartup
+            chkUseTimerCheckers.Checked = My.Settings.UseTimers
+            TextBox1.Text = My.Settings.UseTimers_interval
+            chkUseTimerCheckers_CheckedChanged(sender:=Nothing, e:=Nothing)
     End Sub
 
     Private Sub ApplyChanges()
-        If chkHideClippyOnStartup.CheckState = CheckState.Checked = True Then
-            My.Settings.HideOnStartup = True
-        Else
-            My.Settings.HideOnStartup = False
-        End If
-        If chkUseTimerCheckers.Checked = True Then
-            My.Settings.UseTimers = True
-            My.Settings.UseTimers_interval = TextBox1.Text
-        Else
-            My.Settings.UseTimers = False
-        End If
+        My.Settings.HideOnStartup = chkHideClippyOnStartup.Checked
+        My.Settings.UseTimers = chkUseTimerCheckers.Checked
+        My.Settings.UseTimers_interval = TextBox1.Text
         My.Settings.Save()
     End Sub
 
