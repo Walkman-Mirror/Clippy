@@ -12,9 +12,9 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("Clippy")> 
 <Assembly: AssemblyDescription("Awesome clipboard manager.")> 
-<Assembly: AssemblyCompany("DeavmiOSS")> 
+<Assembly: AssemblyCompany("Crowbar")> 
 <Assembly: AssemblyProduct("Clippy")> 
-<Assembly: AssemblyCopyright("FGOSS from DeavmiOSS. GPL v3 or above.")> 
+<Assembly: AssemblyCopyright("Crowbar 2015. This software is licensed under the GNU General Public License v3.0 or above.")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)> 
